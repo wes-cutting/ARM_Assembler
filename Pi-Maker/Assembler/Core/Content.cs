@@ -16,25 +16,25 @@ namespace Assembler.Core
     public class Params2 : IContent
     {
         public bool IsImmediate { get; set; }
-        public int Destination { get; set; }
-        public int Parameter { get; set; }
+        public char Destination { get; set; }
+        public char Parameter { get; set; }
         public int Shift { get; set; }
     }
 
     public class Params3 : IContent
     {
         public bool IsImmediate { get; set; }
-        public int Destination { get; set; }
-        public int Operand1 { get; set; }
-        public int Operand2 { get; set; }
+        public char Destination { get; set; }
+        public char Operand1 { get; set; }
+        public char Operand2 { get; set; }
         public int Shift { get; set; }
     }
 
     public class SignedParam : IContent
     {
         public bool IsImmediate { get; set; }
-        public int ValueReg { get; set; }
-        public int BaseAddress { get; set; }
+        public char ValueReg { get; set; }
+        public char BaseAddress { get; set; }
         public int Offset { get; set; }
         public int Signed { get; set; }
     }
