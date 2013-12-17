@@ -12,7 +12,7 @@ namespace Assembler
     {
         public void Run()
         {
-            StreamReader reader = new StreamReader("test.txt");
+            StreamReader reader = new StreamReader("assembly.txt");
             List<String> buffer = new List<String>();
             String line;
             while ((line = reader.ReadLine()) != null)
@@ -20,7 +20,7 @@ namespace Assembler
                 buffer.Add(line);
             }
             TokenMaker maker = new TokenMaker(buffer);
-            maker.Print();
+            maker.MakeTokens();
             Console.Read();
         }
 

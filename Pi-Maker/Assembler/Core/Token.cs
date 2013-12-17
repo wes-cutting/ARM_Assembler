@@ -13,6 +13,8 @@ namespace Assembler.Core
         public Conditions Condition { get; set; }
         public IContent OpContent { get; set; }
 
+        public Token() { }
+
         public Token(Conditions cond, Operations op, IContent param)
         {
             if (!cond.Equals(null))

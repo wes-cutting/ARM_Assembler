@@ -8,9 +8,17 @@ namespace Assembler.Core
 {
     public enum Operations
     {
-        BRANCH,
-        DATAPROC,
-        LOADSTORE
+        AND,
+        ORR,
+        ADD,
+        SUB, 
+        CMP,
+        MOV,
+        LDR,
+        LDRB,
+        STR,
+        STRB,
+        BRANCH
     }
 
     public enum Conditions
